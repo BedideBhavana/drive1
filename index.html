@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Background Video</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Fallback for browsers that do not support video */
+        padding: 3rem;
+        overflow: hidden;
+    }
+    
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.5; /* Adjust the opacity as needed */
+    }
+    
+    .brand-title {
+        font-size: 1.5rem;
+        color: #fff;
+        z-index: 1;
+    }
+    
+    .navbar-links ul {
+        list-style: none;
+        display: flex;
+        z-index: 1;
+    }
+    
+    .navbar-links li {
+        margin-left: 1rem;
+    }
+    
+    .navbar-links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    
+   
+    
+    
+    .k:hover{
+      transform: scale(1.2);
+    }
+    .n:hover,.p:hover,.q:hover,.r:hover{
+     color: blue;
+    }
+  
+   .container{
+    background-color:aliceblue;
+    height:300px;
+    width:200px;
+    /* margin-top: 10%; */
+    padding: 10%;
+   }
+   
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <video autoplay muted loop class="background-video">
+            <source src="WhatsApp Video 2024-09-10 at 17.52.56_bb67e014.mp4" type="video/mp4">
+            
+        </video>
+        <div class="brand-title">myBrand</div>
+       
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#" class="n">Home</a></li>
+                <li><a href="#" class="p">About</a></li>
+                <li><a href="#" class="q">Services</a></li>
+                <li><a href="#" class="r">Contact</a></li>
+            </ul>
+        </div>
+        <input type="search" placeholder="search" class="k">
+    </nav>
+    <div class="container">
+  <div class="t"><a href="#section2" style="text-decoration: none;">TABLE</a></div><hr><br>
+  <div> <a href="" style="text-decoration: none; color: blue;">FORMS</a></div><hr><br>
+  <div><a href="" style="text-decoration: none;color: blue;">lists</a></div><hr><br>
+  <div><a href="" style="text-decoration: none;color: blue;">cards</a></div><hr></div>
+<div class="section2" id="section2">
+    <caption><h1>student marks list</h1></caption>
+<table border="2"
+cellpadding="5"cellspacing="10">
+<tr>
+<th>student name</th>
+<th>subject name</th>
+<th>marks</th>
+<th>attendence</th>
+<th>grade</th>
+</tr>
+<tr>
+<td>jansi</td>
+<td>english</td>
+<td> 90</td>
+<td>75%</td>
+<td>A</td>
+</tr>
+<tr>
+<td>rani</td>
+<td>english</td>
+<td> 85</td>
+<td>80%</td>
+<td>A</td>
+</tr>
+<tr>
+<td>joy</td>
+<td>english</td>
+<td>70</td>
+<td>85%</td>
+<td>B</td>
+</tr>
+<tr>
+<td>anil</td>
+<td>english</td>
+<td>75</td>
+<td>70%</td>
+<td>B</td>
+</tr>
+<tr>
+<td>rahul</td>
+<td>english</td>
+<td>95</td>
+<td>80%</td>
+<td>A</td>
+</tr>
+</table>
+</div>
+
+
+</body>
+</html>
